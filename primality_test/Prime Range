@@ -1,0 +1,11 @@
+n=int(input())
+for i in range(n):
+    a,b=map(int,input().split())
+    li=[]
+    for j in range(a,b):
+        if(j%2==1):
+            li.append(j)
+        else:
+            li==0
+    else:
+        print(*li)
