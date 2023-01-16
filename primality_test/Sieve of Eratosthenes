@@ -1,0 +1,16 @@
+from math import*
+def Sieve_of_Eratosthenes(Number):
+    primes = [True] * (Number+1)
+    primes[0] = False
+    primes[1] = False
+    for p in range(2,int(sqrt(Number))+1):
+        if(primes[p] == True):
+            for i in range(p*p,Number+1,p):
+                primes[i] = False
+    for i in range(len(primes)):
+        if(primes[i] == True):
+            print(i,end=" ")
+if __name__ =="__main__":
+    Number=int(input())
+    Sieve_of_Eratosthenes(Number)
+        
