@@ -1,0 +1,14 @@
+def prime_factorization(Number):
+    i = 2
+    while Number > 1:
+
+        if Number % i == 0:
+            print(i,end=" , ")
+            
+            Number = Number // i
+        else:
+            i += 1
+            
+if __name__ =="__main__":      
+    number = int(input("Enter the any number: "))
+    prime_factorization(number)
